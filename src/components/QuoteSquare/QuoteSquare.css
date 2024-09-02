@@ -1,0 +1,48 @@
+.who {
+  display: grid;
+  grid-column: span 6;
+  grid-template-columns: subgrid;
+  background-color: rgba(249, 172, 142, 1);
+}
+
+@media screen and (max-width: 775px) {
+	.who {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+.who img {
+  grid-column: 1 / 4;
+  height: 600px;
+}
+
+@media screen and (max-width: 775px) {
+	.who img {
+		height: 300px;
+	}
+}
+
+.who .quote {
+  grid-column: 4 / 6;
+  margin: 0%;
+  margin-top: 20%;
+  margin-left: 20px;
+  padding: 0%;
+}
+
+@media screen and (max-width: 775px) {
+	.who .quote {
+		margin: 50px;
+	}
+}
+
+.who .quote .name {
+  text-align: right;
+}
+
+@media screen and (max-width: 775px) {
+	.who .quote .name{
+		margin: 0 50px;
+	}
+}

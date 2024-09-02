@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+	background-color: rgba(245, 246, 191,1);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.grid {
+  display: grid;
+	grid-template-columns: repeat(6, 1fr);
+  column-gap: 20px;
+}
+
+section { /* TODO Kolla om den påverkar */
+  grid-column: span 6;
+  display: flex;
+}
+
+h1 {
+	color: black;
+	font-family: "Montserrat Subrayada";
+	font-size: 52px;
+	font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 775px) {
+  h1 {
+    font-size: 23px;
+  }
+}
+
+h2, q {
+	color: #000;
+	font-family: Questrial;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+  quotes: none;
+  display: block;
+}
+
+@media screen and (max-width: 775px){
+  h2, q {
+    font-size: 20px;
+  }
+}
+
+p {
+	color: #000;
+	font-family: "Open Sans";
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media screen and (max-width: 775px) {
+  p {
+    font-size: 16px;
+  }
+}
+      
+img {
+  max-width: 100%;
+}
+
+footer {
+  height: 180px;
+}
+
+@media screen {
+  footer {
+    height: 150px;
+  }
+}

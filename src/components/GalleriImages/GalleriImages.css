@@ -1,0 +1,155 @@
+.img-small img, .img-large img {
+	width: 100%;
+	max-width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	display: block;
+	border: 10px solid black;
+	box-sizing: border-box;
+}
+
+.img-small:not(.active), .img-large:not(.active) {
+	opacity: .3;
+	transition: opacity .2s;
+}
+
+.img-small .img1 {
+	border-color: rgba(207, 54, 70, 1);
+}
+
+.img-small .img2 {
+	border-color: rgba(252, 212, 117, 1);
+}
+
+.img-small .img3 {
+	border-color: rgba(249, 199, 203, 1);
+}
+
+.img-small .img4 {
+	border-color: rgba(96, 79, 203, 1);
+}
+
+.img-small .img5 {
+	border-color: rgba(1, 15, 39, 1);
+}
+
+.img-small .img6 {
+	border-color: rgba(24, 192, 132, 1);
+}
+
+.img-small .img7 {
+	border-color: rgba(172, 66, 96, 1);
+}
+
+.img-small .img8 {
+	border-color: rgba(255, 186, 127, 1);
+}
+
+.img-small .img9 {
+	border-color: rgba(46, 103, 34, 1);
+}
+
+.img-small .img10 {
+	border-color: rgba(8, 68, 176, 1);
+}
+
+.img-large .img11 {
+	border-color: rgba(249, 229, 186, 1);
+}
+
+.img-small .img12 {
+	border-color: rgba(229, 217, 147, 1);
+}
+
+.img-small .img13 {
+	border-color: rgba(244, 245, 239, 1);
+}
+
+.img-small .img14 {
+	border-color: rgba(15, 70, 126, 1);
+}
+
+.img-small .img15 {
+	border-color: rgba(124, 137, 179, 1);
+}
+
+.img-small .img16 {
+	border-color: rgba(208, 219, 86, 1);
+}
+
+.img-small .img17 {
+	border-color: rgba(113, 35, 24, 1);
+}
+
+.img-small .img18 {
+	border-color: rgba(156, 243, 239, 1);
+}
+
+.img-small .img19 {
+	border-color: rgba(248, 1, 60, 1);
+}
+
+.img-small .img20 {
+	border-color: rgba(92, 7, 73, 1);
+}
+
+.img-small .img21 {
+	border-color: rgba(255, 90, 4, 1);
+}
+
+.img-small {
+	grid-area: span 1 / span 1;
+}
+
+.img-large {
+	grid-area: span 2 / span 2;
+}
+
+@media screen and (max-width: 775px) {
+	.img-small, .img-large {
+		grid-area: span 2 / span 2;
+	}
+}
+
+.img-logo {
+	border: 0;
+}
+
+.filterRuta {
+	position: absolute;
+	top: 85px;
+	right: 10px;
+}
+
+.filterText {
+	font-size: 12px;
+	color: rgb(86, 86, 86);
+	margin: 0%;
+}
+
+button {
+	margin-right: 4px;
+	opacity: 85%;
+	height: 20px;
+	width: 20px;
+	border: none;
+	border-radius: 10%;
+	box-shadow: 2px 2px 4px 0px rgb(148 150 119);
+}
+
+.allActive {
+	background-color: #ffffff;
+}
+
+.red {
+	background-color: rgba(179, 19, 19, 0.987);
+}
+
+.yellow {
+	background-color: rgba(251, 222, 89, 0.987);
+}
+
+
+.green {
+	background-color: rgba(60, 202, 98, 0.987);
+}

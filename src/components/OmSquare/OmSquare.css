@@ -1,0 +1,46 @@
+.about {
+	display: grid;
+	grid-column: span 6;
+	grid-template-columns: subgrid;
+	background-color: white;
+}
+
+@media screen and (max-width: 775px) {
+	.about {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+.about .about-text {
+	grid-column: 1 / 4;
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+	justify-content: space-evenly;
+	margin: 10px 90px;
+	opacity: 0.65;
+}
+
+@media screen and (max-width: 775px) {
+	.about .about-text {
+		margin: 10px 60px;
+	}
+}
+
+.about .about-text p {
+	margin: 10px 0%;
+}
+
+.about img {
+	grid-column: 4 / 7;
+	height: 500px;
+	width: 100%;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 775px) {
+	.about img {
+		height: 260px;
+	}
+}
